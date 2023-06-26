@@ -3,10 +3,10 @@ from PIL import Image
 import pickle
 
 
-model = pickle.load(open('C:/Users/amita/Projects/LoanPrediction/LoanPrediction/notebooks/LogRegmodel.pkl', 'rb'))
+model = pickle.load(open('./notebooks/LogRegmodel.pkl', 'rb'))
 
 def run():
-    img1 = Image.open('C:/Users/amita/Projects/Loan_Approval_Prediction/bank.jpg')
+    img1 = Image.open('bank.jpg')
     img1 = img1.resize((156,145))
     st.image(img1,use_column_width=False)
     st.title("Loan Approval Prediction using Machine Learning")
