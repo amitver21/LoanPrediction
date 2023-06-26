@@ -5,7 +5,7 @@ pandas
 matplotlib
 streamlit
 Pillow
-seaoborn
+seaborn
 imbalanced-learn
 xgboost
 -e .
